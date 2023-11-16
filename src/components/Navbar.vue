@@ -3,6 +3,7 @@
   <nav class="navbar navbar-expand-lg navbarContainer">
     <div class="container-fluid">
       <button
+        @click="openNavbarModal()"
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -40,20 +41,28 @@
       </div>
     </div>
   </nav>
+  <NavbarModal ref="navbarModal"></NavbarModal>
 </template>
 
 <script>
+import NavbarModal from "@/components/NavbarModal.vue";
 export default {
   data() {
     return {};
+  },
+  components: { NavbarModal },
+  methods: {
+    openNavbarModal() {
+      this.$refs.navbarModal.showModal();
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-* {
-  // border: 1px solid black;
-}
+// * {
+//   // border: 1px solid black;
+// }
 .navbarContainer {
   background: url(@/img/footprint.png) no-repeat center #f2f1de;
   background-size: 50px;
