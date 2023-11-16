@@ -48,9 +48,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// * {
-//   // border: 1px solid black;
-// }
 .navbarContainer {
   background: url(@/img/footprint.png) no-repeat center #f2f1de;
   background-size: 50px;
