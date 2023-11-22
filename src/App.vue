@@ -1,5 +1,6 @@
 <template>
   <Navbar></Navbar>
+  <Carousel></Carousel>
 </template>
 
 <style lang="scss">
@@ -8,16 +9,12 @@
 
 <script>
 import Navbar from "@/components/Navbar.vue";
+import Carousel from "@/components/Carousel.vue";
 
 export default {
   data() {
     return {};
   },
-  components: { Navbar },
-
-  methods: {},
-  // created() {
-  //   this.getProducts();
-  // },
+  components: { Navbar, Carousel },
 };
 </script>
