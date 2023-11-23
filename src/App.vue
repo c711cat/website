@@ -1,6 +1,7 @@
 <template>
   <Navbar></Navbar>
   <Carousel></Carousel>
+  <Marquee></Marquee>
 </template>
 
 <style lang="scss">
@@ -10,11 +11,11 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Carousel from "@/components/Carousel.vue";
-
+import Marquee from "@/components/Marquee.vue";
 export default {
   data() {
     return {};
   },
-  components: { Navbar, Carousel },
+  components: { Navbar, Carousel, Marquee },
 };
 </script>
