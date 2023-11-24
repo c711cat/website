@@ -32,6 +32,8 @@
   max-width: 100%;
   font-size: 100%;
   flex-wrap: nowrap;
+  border-top: 1px solid #383838;
+  border-bottom: 1px solid #383838;
 }
 .titleAndMarqueeContainer {
   margin-right: 10px;
