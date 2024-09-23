@@ -16,7 +16,7 @@
         </h1>
 
         <ul class="p-0 modal-body">
-          <li>候選人主張</li>
+          <li @click="toAbout">候選人主張</li>
           <li>政策議題</li>
           <li>最新活動</li>
           <li>民眾信箱</li>
@@ -47,6 +47,10 @@ export default {
     },
     closeNavbarModal() {
       this.modal.hide();
+    },
+    toAbout() {
+      console.log("about");
+      // this.$router.push("/about");
     },
   },
   mounted() {
