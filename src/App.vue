@@ -2,6 +2,7 @@
   <Navbar></Navbar>
   <Carousel></Carousel>
   <Marquee></Marquee>
+  <router-view />
 </template>
 
 <style lang="scss">

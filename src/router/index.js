@@ -4,12 +4,12 @@ const routes = [
   {
     path: "/",
     component: () => import("@/components/Navbar.vue"),
-  },
-  {
-    path: "/about",
-    name: "about",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    children: [
+      {
+        path: "about",
+        component: () => import("@/views/AboutView.vue"),
+      },
+    ],
   },
 ];
 
